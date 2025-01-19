@@ -1,0 +1,8 @@
+1. RuntimeError: CUDA error: CUBLAS_STATUS_EXECUTION_FAILED when calling `cublasSgemmStridedBatched( handle, opa, opb, m, n, k, &alpha, a, lda, stridea, b, ldb, strideb, &beta, c, ldc, stridec, num_batches)`
+
+  解法:如https://blog.csdn.net/echoesooo/article/details/138823108所说,cuda版本问题.
+       系统安装的cuda版本较低,项目让安装的torch的版本较高(1.8.1).因此安装1.8.0版本的torch即可.
+
+2. TypeError: mel() takes 0 positional arguments but 5 were given
+  librosa版本问题
+
