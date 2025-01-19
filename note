@@ -2,7 +2,18 @@
 
   解法:如https://blog.csdn.net/echoesooo/article/details/138823108所说,cuda版本问题.
        系统安装的cuda版本较低,项目让安装的torch的版本较高(1.8.1).因此安装1.8.0版本的torch即可.
-
+       系统环境:
+	(1) nvcc --version
+		nvcc: NVIDIA (R) Cuda compiler driver
+		Copyright (c) 2005-2020 NVIDIA Corporation
+		Built on Tue_Sep_15_19:10:02_PDT_2020
+		Cuda compilation tools, release 11.1, V11.1.74
+		Build cuda_11.1.TC455_06.29069683_0
+ 	(2)nvidia-smi: NVIDIA-SMI 470.239.06   Driver Version: 470.239.06   CUDA Version: 11.4     
+	(3)torch version: 1.8.0;
+	   torch.version.cuda: 10.2
+	GPU: Tesla P40; 显存:24G; 实际使用:<17G(bs=16);<12G(bs=8)
+	CPU: 10核,实际使用率<30%; 内存大小: 30G, 实际使用<5G.
 2. TypeError: mel() takes 0 positional arguments but 5 were given
   librosa版本问题
 
